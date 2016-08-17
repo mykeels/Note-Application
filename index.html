@@ -1,4 +1,4 @@
-
+﻿
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -16,37 +16,43 @@
     <title>Note Application</title>
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <link href="CSS/style.css" rel="stylesheet" /> 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 </head>
 
-<body ng-app="WakanowPayment">
-
-
-    <div class="container down-10" ng-controller="MainCtrl">
+<body>
+    <div class="container down-10">
         <div class="row">
 
             <div class="col-sm-12 pad-50">
                 <div class="row">
                     <div class="col-md-12" style="padding-left: 0px;">
-                        <h4 class="bold" style="margin-top: 0px;">Note Taking Application</h4>
+                        <h2 class="bold" style="margin-top: 0px;">Note Taking Application</h2>
                     </div>
                     <div class="col-md-12" style="padding-left: 0px;">
-                        <p>
+                        <p class="font20 pad-top-20">
                             Please use the Note Application ...
                         </p>
                         <br />
                         <div>
-                          <label>Notes (0)</h3>
+                          <label>Notes (0)</label>
                         </div>
                         <div class="row">
                           <div class="col-sm-12">
                             <div class="row">
-                              <div class="col-sm-6"><button class="btn btn-block">Create Note</button></div>
-                              <div class="col-sm-6"><button class="btn btn-block">Clear</button></div>
+                                <div class="col-sm-12 pad-15">
+                                    <input type="text" class="form-control" placeholder="Note Title" />
+                                </div>
+                                <div class="col-sm-12 pad-15">
+                                    <textarea class="form-control" placeholder="What's on your mind?'"></textarea>
+                                </div>
+                              <div class="col-sm-12 right top10"><button class="btn btn-success">Create Note</button></div>
+                              <!--<div class="col-sm-6"><button class="btn btn-danger">Clear</button></div>-->
                             </div>
                           </div>
                         </div>
@@ -60,6 +66,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.min.js"></script>
+    <script src="Scripts/NoteApplication.js"></script>
 </body>
 </html>
